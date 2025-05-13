@@ -1,8 +1,8 @@
 export default async function handler(req, res) {
-  const { id } = res.query;
+  const { id } = req.query;
 
-  const client_id = "";
-  const client_secret = "";
+  const client_id = process.env.SPOTIFY_CLIENT_ID;
+  const client_secret = process.env.SPOTIFY_CLIENT_SECRET;
 
   const auth = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 
