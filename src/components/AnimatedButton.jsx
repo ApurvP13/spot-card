@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function AnimatedButton() {
   return (
     <motion.button
-      className="bg-[#4ac776] px-4 py-4 rounded-r-2xl border-l-2 border-zinc-900 tracking-wider font-semibold uppercase font-sans"
+      className="bg-[#4ac776] px-4 py-4 rounded-2xl  tracking-wider font-semibold uppercase font-sans"
       type="submit"
       whileHover={{
         scale: 1.1, // Slightly grow the button on hover
