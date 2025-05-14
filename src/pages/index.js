@@ -13,20 +13,27 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen gap-4">
-      <h1 className="text-5xl ">Enter your username here</h1>
+    <div className="flex font-sans flex-col items-center justify-center h-screen gap-4">
+      <h1 className=" p-2 text-4xl md:text-7xl font-display font-extrabold tracking-wider bg-gradient-to-l from-[#1db954] via-[#33c065] to-[#4ac776]  bg-clip-text text-transparent ">
+        Get Your Spot Card
+      </h1>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-8"
+        className="flex items-center justify-center "
       >
         <input
           type="text"
           placeholder="goat"
           value={userId}
           onChange={(e) => setUserId(e.target.value)}
-          className="border-2 border-white rounded-3xl p-4"
+          className="  rounded-l-2xl bg-[#4ac776] px-4 py-4 "
         />
-        <button type="submit">pls pls pls mujhe touch karo</button>
+        <button
+          className="bg-[#4ac776] px-4 py-4 rounded-r-2xl border-l-2 border-zinc-900 tracking-wider font-semibold uppercase font-sans "
+          type="submit"
+        >
+          SpotCard!
+        </button>
       </form>
     </div>
   );
