@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
+import AnimatedButton from "@/components/AnimatedButton";
 
 export default function Home() {
   const [userId, setUserId] = useState("");
@@ -28,12 +29,7 @@ export default function Home() {
           onChange={(e) => setUserId(e.target.value)}
           className="  rounded-l-2xl bg-[#4ac776] px-4 py-4 "
         />
-        <button
-          className="bg-[#4ac776] px-4 py-4 rounded-r-2xl border-l-2 border-zinc-900 tracking-wider font-semibold uppercase font-sans "
-          type="submit"
-        >
-          SpotCard!
-        </button>
+        <AnimatedButton />
       </form>
     </div>
   );
