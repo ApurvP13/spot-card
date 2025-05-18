@@ -1,40 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🎧 SpotCard — Spotify Profile Card Generator
 
-## Getting Started
+SpotCard is a sleek little web app that lets users enter their **Spotify username** and a **track URL**, and generates a beautiful scannable Spotify card powered by [Spotify Codes](https://scannables.scdn.co/).
 
-First, run the development server:
+Built with **Next.js**, **Tailwind CSS**, and a touch of **Framer Motion**, it’s fast, smooth, and mobile-friendly.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- 🔍 Extracts track ID from any Spotify song URL
+- 🧠 Uses dynamic routing to render user-specific profile cards
+- 🎨 Generates a Spotify scannable code using Spotify’s visual CDN
+- 💚 Spotify-themed styling with modern UI
+- 💥 Optional animations via Framer Motion
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+---
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 📸 Demo
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+[Spot Card](https://spot-card.vercel.app)
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) – React framework for server rendering and routing
+- [Tailwind CSS](https://tailwindcss.com/) – utility-first styling
+- [Framer Motion](https://www.framer.com/motion/) – animations (hover, enter, tap)
+- [Spotify Scannables](https://scannables.scdn.co/) – for generating Spotify code images
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ✏️ Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+On the homepage:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- Enter your Spotify username (or any identifier)
+
+- Paste a Spotify track URL
+
+- Hit “Spot Card!”
